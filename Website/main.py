@@ -11,4 +11,4 @@ def page_not_found(e):
 	return flask.render_template('404.html'), 404
 
 if __name__ == '__main__':
-	website.run()
+	website.run(debug=True)
