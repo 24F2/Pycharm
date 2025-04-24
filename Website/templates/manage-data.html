@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Data</title>
+    <link rel="stylesheet" href="/static/css/manage-data.css">
+</head>
+<body>
+    <h1>Manage Data</h1>
+
+    <!-- Table to display data -->
+    <div id="data-container">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form to add new data -->
+    <h2>Add New Data</h2>
+    <form id="add-data-form">
+        <label for="first_name">First Name *</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <label for="last_name">Last Name *</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Add Data</button>
+    </form>
+
+    <script src="/static/js/manage-data.js"></script>
+</body>
+</html>
